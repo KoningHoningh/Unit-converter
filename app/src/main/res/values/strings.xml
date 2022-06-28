@@ -18,7 +18,7 @@
         <item>Kilometer</item>
         <item>Meter</item>
         <item>Centimeter</item>
-        <item>Milimeter</item>
+        <item>Millimeter</item>
         <item>Yard</item>
         <item>Foot</item>
         <item>Inch</item>
@@ -27,7 +27,7 @@
     <string-array name="weight">
         <item>Kilogram</item>
         <item>Gram</item>
-        <item>Miligram</item>
+        <item>Milligram</item>
         <item>Pound</item>
         <item>Stone</item>
 

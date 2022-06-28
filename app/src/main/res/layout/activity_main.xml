@@ -23,19 +23,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/to_convert"
-        app:layout_constraintTop_toBottomOf="@id/conversion_question"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toBottomOf="@id/conversion_question" />
 
     <EditText
         android:id="@+id/from_convert"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:hint="@string/cost_of_service"
-        android:inputType="numberDecimal"
         android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:minHeight="24dp"
         app:layout_constraintTop_toBottomOf="@+id/spinner_convert"
         tools:ignore="TextContrastCheck" />
 
@@ -44,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/to_convert"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/from_convert"
         app:layout_constraintStart_toEndOf="@+id/from_convert" />
 
@@ -62,12 +63,14 @@
         android:text="ToBeDetermined"
         app:layout_constraintTop_toBottomOf="@+id/to_convert_text"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        android:inputType="" />
+
     <Spinner
         android:id="@+id/convert_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/to_convert"
+        android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="@+id/result_convert"
         app:layout_constraintStart_toEndOf="@+id/result_convert"
         tools:ignore="TextContrastCheck" />
